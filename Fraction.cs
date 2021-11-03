@@ -58,5 +58,32 @@ namespace _3lab
             var fraction = new Fraction(newFraction, inst.num);
             return fraction;
         }
+
+        public static Fraction operator *(Fraction inst, double number)
+        {
+            var newFraction = inst.CountFraction() * number;
+            var fraction = new Fraction(newFraction, inst.num);
+            return fraction;
+        }
+        public static Fraction operator *(double number, Fraction inst)
+        {
+            var newFraction = number * inst.CountFraction();
+            var fraction = new Fraction(newFraction, inst.num);
+            return fraction;
+        }
+
+        public static Fraction operator /(Fraction inst, double number)
+        {
+            var newFraction = inst.CountFraction() / number;
+            var fraction = new Fraction(newFraction, inst.num);
+            return fraction;
+        }
+        public static Fraction operator /(double number, Fraction inst)
+        {
+            var newFraction = number / inst.CountFraction();
+            var fraction = new Fraction(newFraction, inst.num);
+            return fraction;
+        }
+
     }
 }
