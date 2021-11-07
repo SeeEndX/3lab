@@ -8,82 +8,78 @@ namespace _3lab
 {
     public class Fraction
     {
-        private double num; //числитель
-        private double denom; //знаменатель
-        public Fraction(double num, double denom)
+        private int num; //числитель
+        private int denom; //знаменатель
+        public Fraction(int num, int denom)
         {
             this.num = num;
             this.denom = denom;
         }
-        
+
         public double CountFraction()
         {
-            var fractionValue = num/denom; 
+            var fractionValue = num / denom;
             return fractionValue;
         }
-        /*
-        public double Value
-        {
-            get => (num / denom);
-        }
-        */
         public string Output()
         {
-            string output = this.num+"\n-\n"+this.denom;
+            string output = this.num + "\n-\n" + this.denom;
             return output;
         }
-        public static Fraction operator+(Fraction inst, double number)
+
+        public int[] Plus(int n1, int d1, int n2,int d2)
         {
-            var newFraction = inst.CountFraction() + number;
+            int plusNum, plusDen;
+            int[] plus = new int[2];
+            Fraction fract1 = new Fraction(n1, d1);
+            Fraction fract2 = new Fraction(n2, d2);
+            plusNum = fract1.num * fract2.denom + fract2.num * fract1.denom;
+            plusDen = fract1.denom * fract2.denom;
+            plus[0] = plusNum;
+            plus[1] = plusDen;
+            return plus;
+        }
+
+        public int[] Minus(int n1, int d1, int n2, int d2)
+        {
+            int minusNum, minusDen;
+            int[] minus = new int[2];
+            Fraction fract1 = new Fraction(n1, d1);
+            Fraction fract2 = new Fraction(n2, d2);
+            minusNum = fract1.num * fract2.denom - fract2.num * fract1.denom;
+            minusDen = fract1.denom * fract2.denom;
+            minus[0] = minusNum;
+            minus[1] = minusDen;
+            return minus;
+        }
+
+        /*public static Fraction operator+(Fraction fra, int num)
+        {
+            fract1 = ;
+            var newFraction = inst + number;
             var fraction = new Fraction(newFraction, inst.num);
             return fraction;
         }
 
-        public static Fraction operator +(double number, Fraction inst)
+        public static Fraction operator -(Fraction fract1, Fraction fract2)
         {
-            var newFraction = number + inst.CountFraction();
+            var newFraction = inst - number;
             var fraction = new Fraction(newFraction, inst.num);
             return fraction;
         }
-
-        public static Fraction operator -(Fraction inst, double number)
-        {
-            var newFraction = inst.CountFraction() - number;
-            var fraction = new Fraction(newFraction, inst.num);
-            return fraction;
-        }
-        public static Fraction operator -(double number, Fraction inst)
-        {
-            var newFraction = number - inst.CountFraction();
-            var fraction = new Fraction(newFraction, inst.num);
-            return fraction;
-        }
-
-        public static Fraction operator *(Fraction inst, double number)
+        public static Fraction operator *(Fraction fract1, Fraction fract2)
         {
             var newFraction = inst.CountFraction() * number;
             var fraction = new Fraction(newFraction, inst.num);
             return fraction;
         }
-        public static Fraction operator *(double number, Fraction inst)
-        {
-            var newFraction = number * inst.CountFraction();
-            var fraction = new Fraction(newFraction, inst.num);
-            return fraction;
-        }
-
-        public static Fraction operator /(Fraction inst, double number)
+        public static Fraction operator /(Fraction fract1, Fraction fract2)
         {
             var newFraction = inst.CountFraction() / number;
             var fraction = new Fraction(newFraction, inst.num);
             return fraction;
         }
-        public static Fraction operator /(double number, Fraction inst)
-        {
-            var newFraction = number / inst.CountFraction();
-            var fraction = new Fraction(newFraction, inst.num);
-            return fraction;
-        }
-
+    }
+        */
     }
 }
