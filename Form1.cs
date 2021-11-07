@@ -19,18 +19,29 @@ namespace _3lab
 
         private void Plus_Click(object sender, EventArgs e)
         {
+            Action_Label.Text = "+";
             int n1 = Convert.ToInt32(this.Numerator1.Text);
             int n2 = Convert.ToInt32(this.Numerator2.Text);
             int d1 = Convert.ToInt32(this.Denominator1.Text);
             int d2 = Convert.ToInt32(this.Denominator2.Text);
-            Fraction fract1 = new Fraction(n1, d1);
-            Fraction fract2 = new Fraction(n2, d2);
-            int [] arr = fract1.Plus(n1, d1, n2, d2);
+            Fraction fract = new Fraction(n1, d1);
+            int [] arr = fract.Plus(n1, d1, n2, d2);
             resultNum.Text = Convert.ToString(arr[0]);
             resultDen.Text = Convert.ToString(arr[1]);
           //MessageBox.Show("Результат\n"+resultNum.Text+"\n-\n"+resultDen.Text);
         }
 
-
+        private void Minus_Click(object sender, EventArgs e)
+        {
+            Action_Label.Text = "-";
+            int n1 = Convert.ToInt32(this.Numerator1.Text);
+            int n2 = Convert.ToInt32(this.Numerator2.Text);
+            int d1 = Convert.ToInt32(this.Denominator1.Text);
+            int d2 = Convert.ToInt32(this.Denominator2.Text);
+            Fraction fract = new Fraction(n1, d1);
+            int[] arr = fract.Minus(n1, d1, n2, d2);
+            resultNum.Text = Convert.ToString(arr[0]);
+            resultDen.Text = Convert.ToString(arr[1]);
+        }
     }
 }

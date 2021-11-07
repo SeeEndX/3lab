@@ -42,13 +42,13 @@ namespace _3lab
             this.label10 = new System.Windows.Forms.Label();
             this.Numerator2 = new System.Windows.Forms.TextBox();
             this.Action_Label = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.Minus = new System.Windows.Forms.Button();
+            this.Multiply = new System.Windows.Forms.Button();
+            this.Division = new System.Windows.Forms.Button();
+            this.Slash = new System.Windows.Forms.Button();
+            this.Compare = new System.Windows.Forms.Button();
+            this.Clear = new System.Windows.Forms.Button();
+            this.Task = new System.Windows.Forms.Button();
             this.resultDen = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.resultNum = new System.Windows.Forms.TextBox();
@@ -178,82 +178,83 @@ namespace _3lab
             this.Action_Label.TabIndex = 17;
             this.Action_Label.Text = "+";
             // 
-            // button1
+            // Minus
             // 
-            this.button1.AutoSize = true;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(148, 284);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(58, 61);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "-";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Minus.AutoSize = true;
+            this.Minus.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Minus.Location = new System.Drawing.Point(148, 284);
+            this.Minus.Name = "Minus";
+            this.Minus.Size = new System.Drawing.Size(58, 61);
+            this.Minus.TabIndex = 18;
+            this.Minus.Text = "-";
+            this.Minus.UseVisualStyleBackColor = true;
+            this.Minus.Click += new System.EventHandler(this.Minus_Click);
             // 
-            // button3
+            // Multiply
             // 
-            this.button3.AutoSize = true;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button3.Location = new System.Drawing.Point(253, 284);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(58, 61);
-            this.button3.TabIndex = 19;
-            this.button3.Text = "x";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Multiply.AutoSize = true;
+            this.Multiply.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Multiply.Location = new System.Drawing.Point(253, 284);
+            this.Multiply.Name = "Multiply";
+            this.Multiply.Size = new System.Drawing.Size(58, 61);
+            this.Multiply.TabIndex = 19;
+            this.Multiply.Text = "x";
+            this.Multiply.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // Division
             // 
-            this.button4.AutoSize = true;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button4.Location = new System.Drawing.Point(349, 284);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(58, 61);
-            this.button4.TabIndex = 20;
-            this.button4.Text = "/";
-            this.button4.UseVisualStyleBackColor = true;
+            this.Division.AutoSize = true;
+            this.Division.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Division.Location = new System.Drawing.Point(349, 284);
+            this.Division.Name = "Division";
+            this.Division.Size = new System.Drawing.Size(58, 61);
+            this.Division.TabIndex = 20;
+            this.Division.Text = "/";
+            this.Division.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // Slash
             // 
-            this.button5.AutoSize = true;
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button5.Location = new System.Drawing.Point(51, 352);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(155, 61);
-            this.button5.TabIndex = 21;
-            this.button5.Text = "Сократить";
-            this.button5.UseVisualStyleBackColor = true;
+            this.Slash.AutoSize = true;
+            this.Slash.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Slash.Location = new System.Drawing.Point(51, 352);
+            this.Slash.Name = "Slash";
+            this.Slash.Size = new System.Drawing.Size(155, 61);
+            this.Slash.TabIndex = 21;
+            this.Slash.Text = "Сократить";
+            this.Slash.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // Compare
             // 
-            this.button6.AutoSize = true;
-            this.button6.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button6.Location = new System.Drawing.Point(253, 352);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(154, 61);
-            this.button6.TabIndex = 22;
-            this.button6.Text = "Сравнить";
-            this.button6.UseVisualStyleBackColor = true;
+            this.Compare.AutoSize = true;
+            this.Compare.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Compare.Location = new System.Drawing.Point(253, 352);
+            this.Compare.Name = "Compare";
+            this.Compare.Size = new System.Drawing.Size(154, 61);
+            this.Compare.TabIndex = 22;
+            this.Compare.Text = "Сравнить";
+            this.Compare.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // Clear
             // 
-            this.button2.AutoSize = true;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(452, 284);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(172, 61);
-            this.button2.TabIndex = 23;
-            this.button2.Text = "Очистить";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Clear.AutoSize = true;
+            this.Clear.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Clear.Location = new System.Drawing.Point(452, 284);
+            this.Clear.Name = "Clear";
+            this.Clear.Size = new System.Drawing.Size(172, 61);
+            this.Clear.TabIndex = 23;
+            this.Clear.Text = "Очистить";
+            this.Clear.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // Task
             // 
-            this.button7.AutoSize = true;
-            this.button7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button7.Location = new System.Drawing.Point(452, 352);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(172, 61);
-            this.button7.TabIndex = 24;
-            this.button7.Text = "Задание";
-            this.button7.UseVisualStyleBackColor = true;
+            this.Task.AutoSize = true;
+            this.Task.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Task.Location = new System.Drawing.Point(452, 352);
+            this.Task.Name = "Task";
+            this.Task.Size = new System.Drawing.Size(172, 61);
+            this.Task.TabIndex = 24;
+            this.Task.Text = "Задание";
+            this.Task.UseVisualStyleBackColor = true;
             // 
             // resultDen
             // 
@@ -289,13 +290,13 @@ namespace _3lab
             this.Controls.Add(this.resultDen);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.resultNum);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Task);
+            this.Controls.Add(this.Clear);
+            this.Controls.Add(this.Compare);
+            this.Controls.Add(this.Slash);
+            this.Controls.Add(this.Division);
+            this.Controls.Add(this.Multiply);
+            this.Controls.Add(this.Minus);
             this.Controls.Add(this.Action_Label);
             this.Controls.Add(this.Denominator2);
             this.Controls.Add(this.label10);
@@ -331,13 +332,13 @@ namespace _3lab
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox Numerator2;
         private System.Windows.Forms.Label Action_Label;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button Minus;
+        private System.Windows.Forms.Button Multiply;
+        private System.Windows.Forms.Button Division;
+        private System.Windows.Forms.Button Slash;
+        private System.Windows.Forms.Button Compare;
+        private System.Windows.Forms.Button Clear;
+        private System.Windows.Forms.Button Task;
         private System.Windows.Forms.TextBox resultDen;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox resultNum;
