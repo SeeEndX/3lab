@@ -138,6 +138,12 @@ namespace _3lab
                 fract.denom = fract.denom / 3;
             }
 
+            if (fract.num % 2 == 0 && fract.denom % 2 == 0 && fract.num != 0)
+            {
+                fract.num = fract.num / 2;
+                fract.denom = fract.denom / 2;
+            }
+
             while (fract.num % 2 == 0 && fract.denom % 2 == 0 && fract.num != 0)
             {
                 fract.num = fract.num / 2;
