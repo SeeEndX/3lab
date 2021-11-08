@@ -16,18 +16,18 @@ namespace _3lab
             this.denom = denom;
         }
 
-        public double CountFraction()
+        public double countFraction()
         {
             var fractionValue = num / denom;
             return fractionValue;
         }
-        public string Output()
+        public string output()
         {
             string output = this.num + "\n-\n" + this.denom;
             return output;
         }
 
-        public int[] Plus(int n1, int d1, int n2, int d2)
+        public int[] plus(int n1, int d1, int n2, int d2)
         {
             int plusNum, plusDen;
             int[] plus = new int[2];
@@ -48,7 +48,7 @@ namespace _3lab
             return plus;
         }
 
-        public int[] Minus(int n1, int d1, int n2, int d2)
+        public int[] minus(int n1, int d1, int n2, int d2)
         {
             int minusNum, minusDen;
             int[] minus = new int[2];
@@ -69,33 +69,84 @@ namespace _3lab
             return minus;
         }
 
-        /*public static Fraction operator+(Fraction fra, int num)
+        public int[] multiply(int n1, int d1, int n2, int d2)
         {
-            fract1 = ;
-            var newFraction = inst + number;
-            var fraction = new Fraction(newFraction, inst.num);
-            return fraction;
+            int multiplyNum, multiplyDen;
+            int[] multiply = new int[2];
+            Fraction fract1 = new Fraction(n1, d1);
+            Fraction fract2 = new Fraction(n2, d2);
+            multiplyNum = fract1.num * fract2.num;
+            multiplyDen = fract1.denom * fract2.denom;
+            multiply[0] = multiplyNum;
+            multiply[1] = multiplyDen;
+            return multiply;
         }
 
-        public static Fraction operator -(Fraction fract1, Fraction fract2)
+        public int[] division(int n1, int d1, int n2, int d2)
         {
-            var newFraction = inst - number;
-            var fraction = new Fraction(newFraction, inst.num);
-            return fraction;
+            int divisionNum, divisionDen;
+            int[] division = new int[2];
+            Fraction fract1 = new Fraction(n1, d1);
+            Fraction fract2 = new Fraction(n2, d2);
+            divisionNum = fract1.num * fract2.denom;
+            divisionDen = fract1.denom * fract2.num;
+            division[0] = divisionNum;
+            division[1] = divisionDen;
+            return division;
         }
-        public static Fraction operator *(Fraction fract1, Fraction fract2)
+
+        public string compare(int n1, int d1, int n2, int d2)
         {
-            var newFraction = inst.CountFraction() * number;
-            var fraction = new Fraction(newFraction, inst.num);
-            return fraction;
+            string answer = "0";                                   // 0-неверно      1-1я дробь больше  2-2я дробь больше
+            double f1, f2;                                    // 3-дроби равны
+            Fraction fract1 = new Fraction(n1, d1);
+            Fraction fract2 = new Fraction(n2, d2);
+            f1 = Convert.ToDouble(fract1.num) / Convert.ToDouble(fract1.denom);
+            f2 = Convert.ToDouble(fract2.num) / Convert.ToDouble(fract2.denom);
+            if (f1 > f2) answer = ">";
+            else if (f1 < f2) answer = "<";
+            else if (f1 == f2) answer = "=";
+            return answer;
         }
-        public static Fraction operator /(Fraction fract1, Fraction fract2)
+
+        public int[] slash(int n, int d)
         {
-            var newFraction = inst.CountFraction() / number;
-            var fraction = new Fraction(newFraction, inst.num);
-            return fraction;
+            int[] slash_pr = new int[2];
+            Fraction fract = new Fraction(n, d);
+
+            if (fract.denom % fract.num == 0)
+            {
+                fract.denom = fract.denom / fract.num;
+                fract.num = 1;
+            }
+
+            while (fract.num%7 == 0 && fract.denom%7 == 0)
+            {
+                fract.num = fract.num / 7;
+                fract.denom = fract.denom / 7;
+            }
+
+            while (fract.num % 5 == 0 && fract.denom % 5 == 0)
+            {
+                fract.num = fract.num / 5;
+                fract.denom = fract.denom / 5;
+            }
+
+            while (fract.num % 3 == 0 && fract.denom % 3 == 0)
+            {
+                fract.num = fract.num / 3;
+                fract.denom = fract.denom / 3;
+            }
+
+            while (fract.num % 2 == 0 && fract.denom % 2 == 0 && fract.num != 0)
+            {
+                fract.num = fract.num / 2;
+                fract.denom = fract.denom / 2;
+            }
+
+            slash_pr[0] = fract.num; 
+            slash_pr[1] = fract.denom;
+            return slash_pr;
         }
-    }
-        */
     }
 }

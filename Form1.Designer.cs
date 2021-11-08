@@ -52,6 +52,7 @@ namespace _3lab
             this.resultDen = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.resultNum = new System.Windows.Forms.TextBox();
+            this.result10 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Numerator1
@@ -106,7 +107,7 @@ namespace _3lab
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(398, 100);
+            this.label3.Location = new System.Drawing.Point(418, 99);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 62);
             this.label3.TabIndex = 6;
@@ -136,7 +137,7 @@ namespace _3lab
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(504, 11);
+            this.label6.Location = new System.Drawing.Point(493, 8);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(119, 31);
             this.label6.TabIndex = 10;
@@ -145,7 +146,7 @@ namespace _3lab
             // Denominator2
             // 
             this.Denominator2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Denominator2.Location = new System.Drawing.Point(276, 165);
+            this.Denominator2.Location = new System.Drawing.Point(302, 164);
             this.Denominator2.Name = "Denominator2";
             this.Denominator2.Size = new System.Drawing.Size(55, 38);
             this.Denominator2.TabIndex = 16;
@@ -154,7 +155,7 @@ namespace _3lab
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(266, 112);
+            this.label10.Location = new System.Drawing.Point(292, 111);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(76, 28);
             this.label10.TabIndex = 15;
@@ -163,7 +164,7 @@ namespace _3lab
             // Numerator2
             // 
             this.Numerator2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Numerator2.Location = new System.Drawing.Point(276, 69);
+            this.Numerator2.Location = new System.Drawing.Point(302, 68);
             this.Numerator2.Name = "Numerator2";
             this.Numerator2.Size = new System.Drawing.Size(55, 38);
             this.Numerator2.TabIndex = 14;
@@ -172,7 +173,7 @@ namespace _3lab
             // 
             this.Action_Label.AutoSize = true;
             this.Action_Label.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Action_Label.Location = new System.Drawing.Point(197, 107);
+            this.Action_Label.Location = new System.Drawing.Point(205, 107);
             this.Action_Label.Name = "Action_Label";
             this.Action_Label.Size = new System.Drawing.Size(51, 54);
             this.Action_Label.TabIndex = 17;
@@ -200,6 +201,7 @@ namespace _3lab
             this.Multiply.TabIndex = 19;
             this.Multiply.Text = "x";
             this.Multiply.UseVisualStyleBackColor = true;
+            this.Multiply.Click += new System.EventHandler(this.Multiply_Click);
             // 
             // Division
             // 
@@ -211,6 +213,7 @@ namespace _3lab
             this.Division.TabIndex = 20;
             this.Division.Text = "/";
             this.Division.UseVisualStyleBackColor = true;
+            this.Division.Click += new System.EventHandler(this.Division_Click);
             // 
             // Slash
             // 
@@ -222,6 +225,7 @@ namespace _3lab
             this.Slash.TabIndex = 21;
             this.Slash.Text = "Сократить";
             this.Slash.UseVisualStyleBackColor = true;
+            this.Slash.Click += new System.EventHandler(this.Slash_Click);
             // 
             // Compare
             // 
@@ -233,33 +237,36 @@ namespace _3lab
             this.Compare.TabIndex = 22;
             this.Compare.Text = "Сравнить";
             this.Compare.UseVisualStyleBackColor = true;
+            this.Compare.Click += new System.EventHandler(this.Compare_Click);
             // 
             // Clear
             // 
             this.Clear.AutoSize = true;
             this.Clear.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Clear.Location = new System.Drawing.Point(452, 284);
+            this.Clear.Location = new System.Drawing.Point(452, 329);
             this.Clear.Name = "Clear";
-            this.Clear.Size = new System.Drawing.Size(172, 61);
+            this.Clear.Size = new System.Drawing.Size(172, 38);
             this.Clear.TabIndex = 23;
             this.Clear.Text = "Очистить";
             this.Clear.UseVisualStyleBackColor = true;
+            this.Clear.Click += new System.EventHandler(this.Clear_Click);
             // 
             // Task
             // 
             this.Task.AutoSize = true;
             this.Task.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Task.Location = new System.Drawing.Point(452, 352);
+            this.Task.Location = new System.Drawing.Point(452, 373);
             this.Task.Name = "Task";
-            this.Task.Size = new System.Drawing.Size(172, 61);
+            this.Task.Size = new System.Drawing.Size(172, 40);
             this.Task.TabIndex = 24;
             this.Task.Text = "Задание";
             this.Task.UseVisualStyleBackColor = true;
+            this.Task.Click += new System.EventHandler(this.Task_Click);
             // 
             // resultDen
             // 
             this.resultDen.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.resultDen.Location = new System.Drawing.Point(528, 165);
+            this.resultDen.Location = new System.Drawing.Point(528, 164);
             this.resultDen.Name = "resultDen";
             this.resultDen.Size = new System.Drawing.Size(55, 38);
             this.resultDen.TabIndex = 27;
@@ -268,7 +275,7 @@ namespace _3lab
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(518, 112);
+            this.label7.Location = new System.Drawing.Point(518, 111);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(76, 28);
             this.label7.TabIndex = 26;
@@ -277,16 +284,29 @@ namespace _3lab
             // resultNum
             // 
             this.resultNum.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.resultNum.Location = new System.Drawing.Point(528, 69);
+            this.resultNum.Location = new System.Drawing.Point(528, 68);
             this.resultNum.Name = "resultNum";
             this.resultNum.Size = new System.Drawing.Size(55, 38);
             this.resultNum.TabIndex = 25;
+            // 
+            // result10
+            // 
+            this.result10.AutoSize = true;
+            this.result10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.result10.Location = new System.Drawing.Point(452, 285);
+            this.result10.Name = "result10";
+            this.result10.Size = new System.Drawing.Size(172, 38);
+            this.result10.TabIndex = 28;
+            this.result10.Text = "В виде десятичной";
+            this.result10.UseVisualStyleBackColor = true;
+            this.result10.Click += new System.EventHandler(this.result10_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(676, 450);
+            this.Controls.Add(this.result10);
             this.Controls.Add(this.resultDen);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.resultNum);
@@ -342,6 +362,7 @@ namespace _3lab
         private System.Windows.Forms.TextBox resultDen;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox resultNum;
+        private System.Windows.Forms.Button result10;
     }
 }
 
