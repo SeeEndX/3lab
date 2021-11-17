@@ -58,16 +58,16 @@ namespace _3lab
             // Numerator1
             // 
             this.Numerator1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Numerator1.Location = new System.Drawing.Point(111, 68);
+            this.Numerator1.Location = new System.Drawing.Point(125, 78);
             this.Numerator1.Name = "Numerator1";
-            this.Numerator1.Size = new System.Drawing.Size(74, 38);
+            this.Numerator1.Size = new System.Drawing.Size(83, 38);
             this.Numerator1.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(101, 111);
+            this.label1.Location = new System.Drawing.Point(114, 128);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 28);
             this.label1.TabIndex = 2;
@@ -76,16 +76,16 @@ namespace _3lab
             // Denominator1
             // 
             this.Denominator1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Denominator1.Location = new System.Drawing.Point(111, 165);
+            this.Denominator1.Location = new System.Drawing.Point(125, 190);
             this.Denominator1.Name = "Denominator1";
-            this.Denominator1.Size = new System.Drawing.Size(74, 38);
+            this.Denominator1.Size = new System.Drawing.Size(83, 38);
             this.Denominator1.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(58, 8);
+            this.label2.Location = new System.Drawing.Point(170, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(180, 31);
             this.label2.TabIndex = 4;
@@ -95,9 +95,9 @@ namespace _3lab
             // 
             this.Plus.AutoSize = true;
             this.Plus.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Plus.Location = new System.Drawing.Point(51, 284);
+            this.Plus.Location = new System.Drawing.Point(57, 327);
             this.Plus.Name = "Plus";
-            this.Plus.Size = new System.Drawing.Size(58, 61);
+            this.Plus.Size = new System.Drawing.Size(65, 70);
             this.Plus.TabIndex = 5;
             this.Plus.Text = "+";
             this.Plus.UseVisualStyleBackColor = true;
@@ -107,7 +107,7 @@ namespace _3lab
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(429, 99);
+            this.label3.Location = new System.Drawing.Point(483, 114);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 62);
             this.label3.TabIndex = 6;
@@ -117,7 +117,7 @@ namespace _3lab
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(17, 76);
+            this.label4.Location = new System.Drawing.Point(19, 87);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(75, 17);
             this.label4.TabIndex = 8;
@@ -127,7 +127,7 @@ namespace _3lab
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(13, 171);
+            this.label5.Location = new System.Drawing.Point(15, 197);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(90, 17);
             this.label5.TabIndex = 9;
@@ -137,7 +137,7 @@ namespace _3lab
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(523, 9);
+            this.label6.Location = new System.Drawing.Point(588, 10);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(119, 31);
             this.label6.TabIndex = 10;
@@ -146,16 +146,16 @@ namespace _3lab
             // Denominator2
             // 
             this.Denominator2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Denominator2.Location = new System.Drawing.Point(302, 164);
+            this.Denominator2.Location = new System.Drawing.Point(340, 189);
             this.Denominator2.Name = "Denominator2";
-            this.Denominator2.Size = new System.Drawing.Size(81, 38);
+            this.Denominator2.Size = new System.Drawing.Size(91, 38);
             this.Denominator2.TabIndex = 16;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(292, 111);
+            this.label10.Location = new System.Drawing.Point(328, 128);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(108, 28);
             this.label10.TabIndex = 15;
@@ -164,16 +164,16 @@ namespace _3lab
             // Numerator2
             // 
             this.Numerator2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Numerator2.Location = new System.Drawing.Point(302, 68);
+            this.Numerator2.Location = new System.Drawing.Point(340, 78);
             this.Numerator2.Name = "Numerator2";
-            this.Numerator2.Size = new System.Drawing.Size(81, 38);
+            this.Numerator2.Size = new System.Drawing.Size(91, 38);
             this.Numerator2.TabIndex = 14;
             // 
             // Action_Label
             // 
             this.Action_Label.AutoSize = true;
             this.Action_Label.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Action_Label.Location = new System.Drawing.Point(205, 107);
+            this.Action_Label.Location = new System.Drawing.Point(251, 123);
             this.Action_Label.Name = "Action_Label";
             this.Action_Label.Size = new System.Drawing.Size(51, 54);
             this.Action_Label.TabIndex = 17;
@@ -183,9 +183,9 @@ namespace _3lab
             // 
             this.Minus.AutoSize = true;
             this.Minus.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Minus.Location = new System.Drawing.Point(148, 284);
+            this.Minus.Location = new System.Drawing.Point(166, 327);
             this.Minus.Name = "Minus";
-            this.Minus.Size = new System.Drawing.Size(58, 61);
+            this.Minus.Size = new System.Drawing.Size(65, 70);
             this.Minus.TabIndex = 18;
             this.Minus.Text = "-";
             this.Minus.UseVisualStyleBackColor = true;
@@ -195,9 +195,9 @@ namespace _3lab
             // 
             this.Multiply.AutoSize = true;
             this.Multiply.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Multiply.Location = new System.Drawing.Point(253, 284);
+            this.Multiply.Location = new System.Drawing.Point(285, 327);
             this.Multiply.Name = "Multiply";
-            this.Multiply.Size = new System.Drawing.Size(58, 61);
+            this.Multiply.Size = new System.Drawing.Size(65, 70);
             this.Multiply.TabIndex = 19;
             this.Multiply.Text = "x";
             this.Multiply.UseVisualStyleBackColor = true;
@@ -207,9 +207,9 @@ namespace _3lab
             // 
             this.Division.AutoSize = true;
             this.Division.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Division.Location = new System.Drawing.Point(349, 284);
+            this.Division.Location = new System.Drawing.Point(393, 327);
             this.Division.Name = "Division";
-            this.Division.Size = new System.Drawing.Size(58, 61);
+            this.Division.Size = new System.Drawing.Size(65, 70);
             this.Division.TabIndex = 20;
             this.Division.Text = "/";
             this.Division.UseVisualStyleBackColor = true;
@@ -219,9 +219,9 @@ namespace _3lab
             // 
             this.Slash.AutoSize = true;
             this.Slash.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Slash.Location = new System.Drawing.Point(51, 352);
+            this.Slash.Location = new System.Drawing.Point(57, 405);
             this.Slash.Name = "Slash";
-            this.Slash.Size = new System.Drawing.Size(155, 61);
+            this.Slash.Size = new System.Drawing.Size(174, 70);
             this.Slash.TabIndex = 21;
             this.Slash.Text = "Сократить";
             this.Slash.UseVisualStyleBackColor = true;
@@ -231,9 +231,9 @@ namespace _3lab
             // 
             this.Compare.AutoSize = true;
             this.Compare.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Compare.Location = new System.Drawing.Point(253, 352);
+            this.Compare.Location = new System.Drawing.Point(285, 405);
             this.Compare.Name = "Compare";
-            this.Compare.Size = new System.Drawing.Size(154, 61);
+            this.Compare.Size = new System.Drawing.Size(173, 70);
             this.Compare.TabIndex = 22;
             this.Compare.Text = "Сравнить";
             this.Compare.UseVisualStyleBackColor = true;
@@ -243,9 +243,9 @@ namespace _3lab
             // 
             this.Clear.AutoSize = true;
             this.Clear.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Clear.Location = new System.Drawing.Point(452, 329);
+            this.Clear.Location = new System.Drawing.Point(508, 378);
             this.Clear.Name = "Clear";
-            this.Clear.Size = new System.Drawing.Size(172, 38);
+            this.Clear.Size = new System.Drawing.Size(194, 44);
             this.Clear.TabIndex = 23;
             this.Clear.Text = "Очистить";
             this.Clear.UseVisualStyleBackColor = true;
@@ -255,9 +255,9 @@ namespace _3lab
             // 
             this.Task.AutoSize = true;
             this.Task.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Task.Location = new System.Drawing.Point(452, 373);
+            this.Task.Location = new System.Drawing.Point(508, 429);
             this.Task.Name = "Task";
-            this.Task.Size = new System.Drawing.Size(172, 40);
+            this.Task.Size = new System.Drawing.Size(194, 46);
             this.Task.TabIndex = 24;
             this.Task.Text = "Задание";
             this.Task.UseVisualStyleBackColor = true;
@@ -266,16 +266,16 @@ namespace _3lab
             // resultDen
             // 
             this.resultDen.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.resultDen.Location = new System.Drawing.Point(528, 164);
+            this.resultDen.Location = new System.Drawing.Point(594, 189);
             this.resultDen.Name = "resultDen";
-            this.resultDen.Size = new System.Drawing.Size(108, 38);
+            this.resultDen.Size = new System.Drawing.Size(121, 38);
             this.resultDen.TabIndex = 27;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(518, 111);
+            this.label7.Location = new System.Drawing.Point(583, 128);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(132, 28);
             this.label7.TabIndex = 26;
@@ -284,28 +284,28 @@ namespace _3lab
             // resultNum
             // 
             this.resultNum.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.resultNum.Location = new System.Drawing.Point(528, 68);
+            this.resultNum.Location = new System.Drawing.Point(594, 78);
             this.resultNum.Name = "resultNum";
-            this.resultNum.Size = new System.Drawing.Size(108, 38);
+            this.resultNum.Size = new System.Drawing.Size(121, 38);
             this.resultNum.TabIndex = 25;
             // 
             // result10
             // 
             this.result10.AutoSize = true;
-            this.result10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.result10.Location = new System.Drawing.Point(452, 285);
+            this.result10.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.result10.Location = new System.Drawing.Point(508, 328);
             this.result10.Name = "result10";
-            this.result10.Size = new System.Drawing.Size(172, 38);
+            this.result10.Size = new System.Drawing.Size(194, 44);
             this.result10.TabIndex = 28;
-            this.result10.Text = "В виде десятичной";
+            this.result10.Text = "Десятичная дробь";
             this.result10.UseVisualStyleBackColor = true;
             this.result10.Click += new System.EventHandler(this.result10_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(676, 450);
+            this.ClientSize = new System.Drawing.Size(760, 518);
             this.Controls.Add(this.result10);
             this.Controls.Add(this.resultDen);
             this.Controls.Add(this.label7);
@@ -330,8 +330,10 @@ namespace _3lab
             this.Controls.Add(this.Denominator1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Numerator1);
+            this.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Name = "Form1";
             this.Text = "Калькулятор";
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Just_Key_Up);
             this.ResumeLayout(false);
             this.PerformLayout();
 

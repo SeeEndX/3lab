@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace _3lab
 {
@@ -10,92 +6,54 @@ namespace _3lab
     {
         private int num; //числитель
         private int denom; //знаменатель
+
+        public int Num { get => num; set => num = value; }
+        public int Denom { get => denom; set => denom = value; }
+
         public Fraction(int num, int denom)
         {
             this.num = num;
             this.denom = denom;
         }
 
-        public double countFraction()
+        public string write()  //для автотестов, вывод ответа
         {
-            var fractionValue = num / denom;
-            return fractionValue;
+            string result = num.ToString()+" "+denom.ToString();
+            return result;
         }
-        public string output()
+        public static Fraction operator+(Fraction f, Fraction s) //сложение
         {
-            string output = this.num + "\n-\n" + this.denom;
-            return output;
-        }
-
-        public int[] plus(int n1, int d1, int n2, int d2)
-        {
-            int plusNum, plusDen;
-            int[] plus = new int[2];
-            Fraction fract1 = new Fraction(n1, d1);
-            Fraction fract2 = new Fraction(n2, d2);
-            if (fract1.denom == fract2.denom)
-            {
-                plus[0] = fract1.num + fract2.num;
-                plus[1] = fract1.denom;
-            }
-            else
-            {
-            plusNum = fract1.num * fract2.denom + fract2.num * fract1.denom;
-            plusDen = fract1.denom * fract2.denom;
-            plus[0] = plusNum;
-            plus[1] = plusDen;
-            }
-            return plus;
+            int num_new = f.num*s.denom + s.num*f.denom;
+            int den_new = f.denom * s.denom;
+            Fraction answer = new Fraction(num_new, den_new);
+            return answer;
         }
 
-        public int[] minus(int n1, int d1, int n2, int d2)
+        public static Fraction operator -(Fraction f, Fraction s) //вычитание
         {
-            int minusNum, minusDen;
-            int[] minus = new int[2];
-            Fraction fract1 = new Fraction(n1, d1);
-            Fraction fract2 = new Fraction(n2, d2);
-            if (fract1.denom == fract2.denom)
-            {
-                minus[0] = fract1.num - fract2.num;
-                minus[1] = fract1.denom;
-            }
-            else 
-            { 
-            minusNum = fract1.num * fract2.denom - fract2.num * fract1.denom;
-            minusDen = fract1.denom * fract2.denom;
-            minus[0] = minusNum;
-            minus[1] = minusDen;
-            }
-            return minus;
+            int num_new = f.num * s.denom - s.num * f.denom;
+            int den_new = f.denom * s.denom;
+            Fraction answer = new Fraction(num_new, den_new);
+            return answer;
         }
 
-        public int[] multiply(int n1, int d1, int n2, int d2)
+        public static Fraction operator *(Fraction f, Fraction s) //умножение
         {
-            int multiplyNum, multiplyDen;
-            int[] multiply = new int[2];
-            Fraction fract1 = new Fraction(n1, d1);
-            Fraction fract2 = new Fraction(n2, d2);
-            multiplyNum = fract1.num * fract2.num;
-            multiplyDen = fract1.denom * fract2.denom;
-            multiply[0] = multiplyNum;
-            multiply[1] = multiplyDen;
-            return multiply;
+            int num_new = f.num * s.num;
+            int den_new = f.denom * s.denom;
+            Fraction answer = new Fraction(num_new, den_new);
+            return answer;
         }
 
-        public int[] division(int n1, int d1, int n2, int d2)
+        public static Fraction operator /(Fraction f, Fraction s) //деление
         {
-            int divisionNum, divisionDen;
-            int[] division = new int[2];
-            Fraction fract1 = new Fraction(n1, d1);
-            Fraction fract2 = new Fraction(n2, d2);
-            divisionNum = fract1.num * fract2.denom;
-            divisionDen = fract1.denom * fract2.num;
-            division[0] = divisionNum;
-            division[1] = divisionDen;
-            return division;
+            int num_new = f.num * s.denom;
+            int den_new = s.num * f.denom;
+            Fraction answer = new Fraction(num_new, den_new);
+            return answer;
         }
 
-        public string compare(int n1, int d1, int n2, int d2)
+        public string compare(int n1, int d1, int n2, int d2) //сравнение
         {
             string answer = "0";                                   // 0-неверно      1-1я дробь больше  2-2я дробь больше
             double f1, f2;                                    // 3-дроби равны
@@ -109,7 +67,7 @@ namespace _3lab
             return answer;
         }
 
-        public int[] slash(int n, int d)
+        public int[] slash(int n, int d) //сокращение
         {
             int[] slash_pr = new int[2];
             Fraction fract = new Fraction(n, d);
